@@ -15,7 +15,7 @@ REBL is a graphical, interactive tool for browsing Clojure data. It features:
 * metadata viewing
 * datafy support
 * extensibility to new browsers and viewers
-* full keyboard control via [hotkeys](https://github.com/cognitect-labs/rebl/wiki/Hotkeys)
+* full keyboard control via [hotkeys](https://github.com/cognitect-labs/REBL-distro/wiki/Hotkeys)
 
 ![screenshot](screenshot.png)
 
