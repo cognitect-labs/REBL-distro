@@ -1,8 +1,8 @@
 # `REBL`
 
-## Read-Eval-Browse-Loop
+REBL is a graphical, interactive tool for browsing Clojure data. REBL is extracted from Datomic tools developed by the [Datomic Team](https://www.datomic.com/) at [Cognitect](https://cognitect.com), and is available free of charge. We hope that many Clojure developers will find it useful. 
 
-REBL is a graphical, interactive tool for browsing Clojure data. It features:
+## Features
 
 * a two-pane browser/viewer system for viewing collections and their contents
 * navigation into and back out of nested collections
@@ -21,10 +21,14 @@ REBL is a graphical, interactive tool for browsing Clojure data. It features:
 
 REBL runs in your application JVM process, and can be used at dev-time without adding any runtime deps. The UI is written in JavaFX.
 
+## Release Status
+
+REBL is early access. Your feeback can help make it better. Please report any [issues](https://github.com/cognitect-labs/REBL-distro/issues) that you encounter.
+
 ## Requirements
 
 - Clojure 1.10.0-RC2 or higher
-- Java 1.8.0_151 or higher
+- Java 1.8 at 1.8.0_151 or higher
 - core.async (tested with 0.4.490)
 
 ## Usage:
@@ -50,6 +54,6 @@ Your repl should start, along with the REBL UI. Everything you type in the repl 
 
 You can start more UIs with `(cognitect.rebl/ui)`
 
-## Feedback
+## Limitations
 
-Please report any [issues](https://github.com/cognitect-labs/REBL-distro/issues) you encounter.
+REBL currently requires Java 1.8.
