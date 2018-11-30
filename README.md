@@ -23,7 +23,7 @@ REBL runs in your application JVM process, and can be used at dev-time without a
 
 ## Release Status
 
-REBL is early access. Your feeback can help make it better. Please report any [issues](https://github.com/cognitect-labs/REBL-distro/issues) that you encounter.
+REBL is early access. Your feedback can help make it better. Please report any [issues](https://github.com/cognitect-labs/REBL-distro/issues) that you encounter.
 
 ## Requirements
 
