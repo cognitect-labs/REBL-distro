@@ -17,6 +17,8 @@ REBL is a graphical, interactive tool for browsing Clojure data. REBL is extract
 * extensibility to new browsers and viewers
 * full keyboard control via [hotkeys](https://github.com/cognitect-labs/REBL-distro/wiki/Hotkeys)
 
+# NOTE - tap> is not currently wired up in the UI.
+
 ![screenshot](screenshot.png)
 
 REBL runs in your application JVM process, and can be used at dev-time without adding any runtime deps. The UI is written in JavaFX.
