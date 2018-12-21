@@ -25,7 +25,7 @@ REBL runs in your application JVM process, and can be used at dev-time without a
 
 <p align="center"
 	
-  ![clojure_repl_rebl](https://user-images.githubusercontent.com/590297/50367582-361df900-054f-11e9-90c0-0c5d03e61d31.png)
+![clojure_repl_rebl](https://user-images.githubusercontent.com/590297/50367997-631fdb00-0552-11e9-8f18-660dca9a62c8.png)
 
 </p>
 
