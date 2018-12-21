@@ -23,6 +23,16 @@ REBL is a graphical, interactive tool for browsing Clojure data. REBL is extract
 
 REBL runs in your application JVM process, and can be used at dev-time without adding any runtime deps. The UI is written in JavaFX.
 
+<p align="center"
+	
+  ![clojure_repl_rebl](https://user-images.githubusercontent.com/590297/50367582-361df900-054f-11e9-90c0-0c5d03e61d31.png)
+
+</p>
+
+- Start your REPL or run REBL as your REPL with `clj -m congitect.rebl`
+- Send Clojure forms to your REPL manually, from your client or editor, or the REBL evaluation window
+- Inspect the evaluation results and navigate through nested data structures within the REBL UI.
+
 ## Release Status
 
 REBL is early access. Your feedback can help make it better. Please report any [issues](https://github.com/cognitect-labs/REBL-distro/issues) that you encounter.
