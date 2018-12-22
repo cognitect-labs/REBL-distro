@@ -29,9 +29,14 @@ REBL runs in your application JVM process, and can be used at dev-time without a
 
 </p>
 
-- Start your REPL or run REBL as your REPL with `clj -m congitect.rebl`
-- Send Clojure forms to your REPL manually, from your client or editor, or the REBL evaluation window
-- Inspect the evaluation results and navigate through nested data structures within the REBL UI.
+## How do I connect my editor to REBL?
+
+- REBL provides a REPL you can use with REBL via `clj -A rebl -m cognitect.rebl`
+- You can connect your editor to REBL by running the REBL command-line REPL with JVM socket server arguments.
+- Your editor can also communicate with your REBL REPL by running it as an inferior process inside your editor.
+
+## What about other network REPLs?
+- For nREPL or similar you will need to use middleware to communicate with the REBL UI. However, this approach has drawbacks due to the format of data sent across the wire. It is recommended to use the REBL command-line REPL for best results.
 
 ## Release Status
 
