@@ -29,7 +29,7 @@ REBL is early access. Your feedback can help make it better. Please report any [
 
 ## Requirements
 
-- Clojure 1.10.0-RC2 or higher
+- Clojure 1.10.0 or higher
 - Java 1.8 at 1.8.0_151 or higher
   - or Java 11.0.1 or higher [utilizing these dependencies](https://github.com/cognitect-labs/REBL-distro/wiki/Java-11-Usage)
 - core.async (tested with 0.4.490)
