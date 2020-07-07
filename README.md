@@ -25,33 +25,33 @@ REBL runs in your application JVM process, and can be used at dev-time without a
 
 REBL is early access. Your feedback can help make it better. Please report any [issues](https://github.com/cognitect-labs/REBL-distro/issues) that you encounter.
 
-## Requirements
-
-- Clojure 1.10.0 or higher
-- Java 1.8 at 1.8.0_151 or higher
-  - or Java 11.0.1 or higher [utilizing these dependencies](https://github.com/cognitect-labs/REBL-distro/wiki/Java-11-Usage)
-- core.async (tested with 0.4.490)
-
 ## Usage:
 
 [Download REBL](http://rebl.cognitect.com/download.html) and unzip it to your local drive.
 
-Add an alias to (your existing project's) deps.edn with a [local dependency](https://clojure.org/guides/deps_and_cli#local_jar) on the rebl jar file:
+Add an alias in your ~/.clojure/deps.edn (to enable for all projects) or an individual project's deps.edn with a [local dependency](https://clojure.org/guides/deps_and_cli#local_jar) on REBL.
+
+For Java 8 with embedded JavaFX:
 
 ``` clj
-{:deps {}
- :aliases
- {:rebl {:extra-deps {
-	org.clojure/clojure {:mvn/version "1.10.0"}
-        org.clojure/core.async {:mvn/version "0.4.490"}
-	com.cognitect/rebl {:local/root "/path/to/rebl-VERSION.jar"}}}}}
+{:aliases
+ {:rebl
+  {:extra-deps {com.cognitect/rebl {:local/root "path/to/REBL-VERSION/java8"}}
+   :main-opts ["-m" "cognitect.rebl"]}}}
 ```
 
-[Java 11 requires a slightly different deps.edn](https://github.com/cognitect-labs/REBL-distro/wiki/Java-11-Usage).
+For Java 11+:
 
-Replace your normal repl invocation (`clj`, or `clojure` e.g. for inferior-lisp) with REBL:
+``` clj
+{:aliases
+ {:rebl
+  {:extra-deps {com.cognitect/rebl {:local/root "path/to/REBL-VERSION/openjfx15ea"}}
+   :main-opts ["-m" "cognitect.rebl"]}}}
+```
 
-`clj -R:rebl -m cognitect.rebl`
+replace your normal repl invocation (`clj`, or `clojure` e.g. for inferior-lisp) with REBL:
+
+`clj -A:rebl`
 
 Your repl should start, along with the REBL UI. Everything you type in the repl will also appear in REBL. You can also type expressions right into REBL's editor (in the upper left). REBL will maintain a history of exprs+results in the root browse table.
 
