@@ -25,7 +25,7 @@ REBL runs in your application JVM process, and can be used at dev-time without a
 
 REBL is early access. Your feedback can help make it better. Please report any [issues](https://github.com/cognitect-labs/REBL-distro/issues) that you encounter.
 
-## Usage:
+## Usage
 
 [Download REBL](http://rebl.cognitect.com/download.html) and unzip it to your local drive.
 
