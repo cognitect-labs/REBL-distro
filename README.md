@@ -59,7 +59,7 @@ inferior-lisp) with the appropriate alias for your JDK version:
     clj -A:rebl
 
     # for JDK 8
-    clj -A:rebl-jdk8`
+    clj -A:rebl-jdk8
 
 Your repl should start, along with the REBL UI. Everything you type in the repl will also appear in REBL. You can also type expressions right into REBL's editor (in the upper left). REBL will maintain a history of exprs+results in the root browse table.
 
