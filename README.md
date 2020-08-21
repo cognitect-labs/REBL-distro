@@ -68,3 +68,7 @@ You can start more UIs with `(cognitect.rebl/ui)`
 ## Limitations
 
 REBL currently requires Java 1.8 or [Java 11](https://github.com/cognitect-labs/REBL-distro/wiki/Java-11-Usage)
+
+## License
+
+REBL is part of the [Cognitect dev-tools](https://cognitect.com/dev-tools/index.html) and requires acceptance of the [license](https://cognitect.com/dev-tools/license.txt).
