@@ -40,7 +40,7 @@ projects) or to an individual project's `deps.edn`:
 ``` clj
 {:aliases
  {:rebl        ;; for JDK 11+
-  {:extra-deps {com.cognitect/rebl          {:mvn/version "0.9.240"}
+  {:extra-deps {com.cognitect/rebl          {:mvn/version "0.9.241"}
                 org.openjfx/javafx-fxml     {:mvn/version "15-ea+6"}
                 org.openjfx/javafx-controls {:mvn/version "15-ea+6"}
                 org.openjfx/javafx-swing    {:mvn/version "15-ea+6"}
