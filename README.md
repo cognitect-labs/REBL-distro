@@ -48,7 +48,7 @@ projects) or to an individual project's `deps.edn`:
                 org.openjfx/javafx-web      {:mvn/version "15-ea+6"}}
    :main-opts ["-m" "cognitect.rebl"]}
   :rebl-jdk8   ;; for JDK 8
-  {:extra-deps {com.cognitect/rebl {:mvn/version "0.9.240"}}
+  {:extra-deps {com.cognitect/rebl {:mvn/version "0.9.241"}}
    :main-opts ["-m" "cognitect.rebl"]}}}
 ```
 
