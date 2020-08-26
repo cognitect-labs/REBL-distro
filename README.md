@@ -21,6 +21,21 @@ REBL is a graphical, interactive tool for browsing Clojure data. REBL is extract
 
 REBL runs in your application JVM process, and can be used at dev-time without adding any runtime deps. The UI is written in JavaFX.
 
+<p align="center"
+	
+![clojure_repl_rebl](https://user-images.githubusercontent.com/590297/50369932-61aedc80-056b-11e9-889b-ae95c86ea5a8.png)
+
+</p>
+
+## How do I connect my editor to REBL?
+
+- REBL provides a REPL you can use with REBL via `clj -A rebl -m cognitect.rebl`
+- You can connect your editor to REBL by running the REBL command-line REPL with JVM socket server arguments.
+- Your editor can also communicate with your REBL REPL by running it as an inferior process inside your editor.
+
+## What about other network REPLs?
+- For nREPL or similar you will need to use middleware to communicate with the REBL UI. However, this approach has drawbacks due to the format of data sent across the wire. It is recommended to use the REBL command-line REPL for best results.
+
 ## Release Status
 
 REBL is early access. Your feedback can help make it better. Please report any [issues](https://github.com/cognitect-labs/REBL-distro/issues) that you encounter.
